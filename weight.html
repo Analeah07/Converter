@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/weight.css">
+    <title>Mass Converter</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-warning mt-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="math.html"><img src="img/2.png" style="height: 40px; width: 40px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="math.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculator.html">Calculator</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Converter</a>
+            <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="weight.html">Mass & Length</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="time.html">Time</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="currency.html">Currency</a></li>
+                <li><hr class="dropdown-divider"></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Log Out</a>
+          </li>
+        </ul>
+          <form class="d-flex">
+          </form>
+      </div>
+    </div>
+  </nav><br>
+  <div class="container">
+    <div class="mass-converter">
+      <header>Mass & Length Converter</header><hr>
+       <center><p class="font-monospace" >Type a value in any of the fields <br>to convert between mass measurements:</p></center>
+      <form action="#">
+      <div class="fields">
+          <center>
+            <select id="category" class="cat" onchange="choose_category();">
+              <option value="">Choose a Category</option>
+              <option value="mass">Mass</option>
+              <option value="length">Length</option>
+            </select>
+            <br>
+            <div class="field">
+              <input type="number" id="input1" name="input1" onkeyup="mic();">
+              <label for="input1" id="label1">Input 1</label>
+            </div>
+
+            <div class="field"> 
+              <input type="number" id="input2" name="input2" onkeyup="milli();">
+              <label for="input2" id="label2">Input 2</label>
+            </div>  
+
+            <div class="field">
+              <input type="number" id="input3" name="input3" onkeyup="centi();">
+              <label for="input3" id="label3">Input 3</label>
+            </div> 
+
+            <div class="field">
+              <input type="number" id="input4" name="input4" onkeyup="grm();">
+              <label for="input4" id="label4">Input 4</label>
+            </div> 
+
+            <div class="field">
+              <input type="number" id="input5" name="input5" onkeyup="kilo();">
+              <label for="input5" id="label5">Input 5</label>
+            </div> 
+          </center>
+        </div>
+        <button id="clear" class="btn btn-danger btn-lg w-100" onclick="reset();">Clear</button>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="footer">
+    <center><p class="icon"><a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/" target="blank"><i class="fa-brands fa-twitter"></i></a><br>
+             
+                <span><b>&#169; 2023_Mass_and_Length_Converter | All Rights Reserved</b></span>
+             </p>
+    </center>
+ </div>
+
+<script src="./js/weight.js"></script>
+</body>
+</html>

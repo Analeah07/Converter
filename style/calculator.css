@@ -1,0 +1,99 @@
+*
+  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  }
+body
+  {
+    background-image: url(../img/background.jpg);
+    background-repeat: none;
+
+  }
+.logo
+  {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+.container
+  {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.calculator
+  {
+    background-image: url(../img/calc_bg.jpeg);
+    background-size: cover;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow:  1px 1px 6px white,
+                 1px 1px 6px rgba(0, 0, 0, .16);
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+  }
+input
+  {
+    font-family: sans-serif;
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: white;
+    box-shadow: inset -5px -5px 12px rgb(223, 217, 217)
+                inset  5px 5px 12px rgba(0, 0, 0, .16);
+    border: none;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+button
+  {
+    font-weight: bold;
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    box-shadow:  1px 1px 6px white,
+                 1px 1px 6px rgba(0, 0, 0, .16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+  }
+.Equal
+  {
+    font-weight: bold;
+    font-size: 25px;
+    width: 115px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow:  1px 1px 6px white,
+                 1px 1px 6px rgba(0, 0, 0, .16);
+  }
+h1
+  {
+    background-color:bisque;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:auto;
+    padding: 10px;
+    color: rgb(51, 40, 24);
+    font-style: oblique;
+  }
+h3
+  {
+    color: aliceblue;
+    margin: auto;
+    margin-top: 5px;
+  }
+.footer
+  {
+    background-color: bisque;;
+  }
+

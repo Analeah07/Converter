@@ -1,0 +1,61 @@
+*
+    {
+        padding: 0;
+        margin:0;
+        font-family: sans-serif;
+    }
+body
+    {
+      background-image: url(../img/background.jpg);
+      background-repeat: none;
+    }
+.container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+.length-converter
+    {
+        padding: 20px;
+        background: #c89c0a;
+        box-shadow: 0px 0px 2px rgb(0, 0, 0 / 50%);
+        border-radius: 2px;
+    }
+.field
+    {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        margin-bottom: 20px;
+    }
+.field:last-child
+    {
+        margin-bottom: 0;
+    }
+.field label
+    {
+        min-width: 70px;
+        height: 30px;
+        font-weight: bolder;
+    }
+input
+    {
+        display: block;
+        width: 100%;
+        height: 30px;
+        padding: 0 10px;
+    }
+.center-width
+    {
+        text-align: center;
+        margin: 0;
+        background-color: beige;
+        padding: 5px;
+    }
+.footer
+    {
+      background-color: beige;
+    }
