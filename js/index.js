@@ -39,8 +39,4 @@ function validated()
             password.focus();
             return false;
         }
-        else
-        {
-            location.reload();
-        }
     }
